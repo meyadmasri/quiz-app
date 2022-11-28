@@ -1,0 +1,46 @@
+
+.questions {
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #282828;
+    border-radius: 20px;
+    padding: 10px;
+}
+.question {
+
+    min-width: 100%;
+    height: 250px;
+    color: rgb(33, 32, 32);
+    display: table-column;
+    transition: 0.3s all ease-in-out;
+}
+.navigation {
+    position: absolute;
+    top: 30%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.next {
+    right: 300px;
+}
+.previous {
+    left: 300px;
+}
+.arrow {
+    width: 15px;
+    height: 15px;
+    border-top: 8px solid #282828;
+    border-right: 8px solid #282828;
+}
+.next .arrow {
+    transform: rotate(45deg);
+}
+.previous .arrow {
+    transform: rotate(-135deg);
+}
